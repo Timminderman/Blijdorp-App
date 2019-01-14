@@ -2,8 +2,71 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myCoordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
     tools:context=".OceaniumTimeActivity">
 
+    <Button
+        android:id="@+id/buttonOceaniumTime1"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:background="@color/colorOrange"
+        android:text="@string/route"
+        android:textColor="@color/colorWhite"
+        android:onClick="startOceaniumActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOceaniumTime2"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:background="@color/colorOrange"
+        android:text="@string/route"
+        android:textColor="@color/colorWhite"
+        android:onClick="startOceaniumActivity2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/description_times"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/time_one"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOceaniumTime2"
+        app:layout_constraintStart_toStartOf="@+id/buttonOceaniumTime2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/time_two"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOceaniumTime1"
+        app:layout_constraintStart_toStartOf="@+id/buttonOceaniumTime1" />
 </android.support.constraint.ConstraintLayout>

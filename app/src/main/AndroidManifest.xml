@@ -49,7 +49,13 @@
             android:label="@string/title_activity_oceanium_time" />
         <activity
             android:name=".RivierahalTimeActivity"
-            android:label="@string/title_activity_rivierahal_time"></activity>
+            android:label="@string/title_activity_rivierahal_time" />
+        <activity
+            android:name=".OceaniumAcitivity2"
+            android:label="@string/title_activity_oceanium_acitivity2" />
+        <activity
+            android:name=".RivierahalAcitivity2"
+            android:label="@string/title_activity_rivierahal_acitivity2"></activity>
     </application>
 
 </manifest>

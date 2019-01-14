@@ -14,19 +14,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Button oceanium = findViewById(R.id.buttonOceanium);
-        Button rivierahal = findViewById(R.id.buttonRivierhal);
+        Button buttonOceaniumTime = findViewById(R.id.buttonOceaniumTimes);
+        Button buttonRivierhalTime = findViewById(R.id.buttonRivierhalTimes);
         setContentView(R.layout.activity_main);
     }
 
-    public void startOceaniumActivity(View view) {
-        Intent intent = new Intent(this, OceaniumActivity.class);
+    public void startOceaniumTimeActivity(View view) {
+        Intent intent = new Intent(this, OceaniumTimeActivity.class);
         intent.putExtra(EXTRA_INFO, "dit bericht komt uit MainActivity.");
         startActivity(intent);
     }
 
-    public void startRivierahalActivity(View view) {
-        Intent intent = new Intent(this, RivierahalActivity.class);
+    public void startRivierahalTimeActivity(View view) {
+        Intent intent = new Intent(this, RivierahalTimeActivity.class);
         intent.putExtra(EXTRA_INFO, "dit bericht komt uit MainActivity.");
         startActivity(intent);
     }

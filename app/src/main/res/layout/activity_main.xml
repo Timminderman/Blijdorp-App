@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonOceanium"
+        android:id="@+id/buttonOceaniumTimes"
         android:layout_width="95dp"
         android:layout_height="35dp"
         android:layout_marginBottom="83dp"
@@ -50,26 +50,26 @@
         android:layout_marginStart="50dp"
         android:background="@color/colorOrange"
         android:textColor="@color/colorWhite"
-        android:onClick="startOceaniumActivity"
+        android:onClick="startOceaniumTimeActivity"
         android:text="@string/oceanium"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonRivierhal"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRivierhalTimes"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonRivierhal"
+        android:id="@+id/buttonRivierhalTimes"
         android:layout_width="95dp"
         android:layout_height="40dp"
         android:layout_marginEnd="41dp"
         android:layout_marginRight="41dp"
         android:background="@color/colorOrange"
         android:textColor="@color/colorWhite"
-        android:onClick="startRivierahalActivity"
+        android:onClick="startRivierahalTimeActivity"
         android:text="@string/rivierahal"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonOceanium"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOceaniumTimes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonOceanium"
-        app:layout_constraintTop_toTopOf="@+id/buttonOceanium" />
+        app:layout_constraintStart_toEndOf="@+id/buttonOceaniumTimes"
+        app:layout_constraintTop_toTopOf="@+id/buttonOceaniumTimes" />
 
 
 </android.support.constraint.ConstraintLayout>

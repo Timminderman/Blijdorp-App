@@ -3,10 +3,20 @@
     <string name="title_activity_oceanium">Ingang: Oceanium</string>
     <string name="title_activity_main">Blijdorp App</string>
     <string name="title_activity_rivierahal">Ingang: Rivierahal</string>
+
+    <!--Hoofdscherm-->
     <string name="welkom">Welkom bij Blijdorp</string>
     <string name="locatie">Wat is uw locatie?</string>
     <string name="oceanium">Oceanium</string>
     <string name="rivierahal">Rivierahal</string>
-    <string name="title_activity_oceanium_time">OceaniumTimeActivity</string>
-    <string name="title_activity_rivierahal_time">RivierahalTimeActivity</string>
+
+    <!--Tijd overzicht-->
+    <string name="title_activity_oceanium_time">Oceanium Tijden</string>
+    <string name="title_activity_rivierahal_time">Rivierahal Tijden</string>
+    <string name="description_times">Geef hier uw tijd aan</string>
+    <string name="time_one">10:00 - 13:00</string>
+    <string name="time_two">14:00 - 17:00</string>
+    <string name="route">Route</string>
+    <string name="title_activity_oceanium_acitivity2">OceaniumAcitivity2</string>
+    <string name="title_activity_rivierahal_acitivity2">RivierahalAcitivity2</string>
 </resources>
