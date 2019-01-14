@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">MobileAppExamen</string>
-    <string name="title_activity_blijdorp">Map</string>
+    <string name="app_name">Blijdorp App</string>
+    <string name="title_activity_oceanium">Ingang: Oceanium</string>
+    <string name="title_activity_main">Blijdorp App</string>
+    <string name="title_activity_rivierahal">Ingang: Rivierahal</string>
+    <string name="welkom">Welkom bij Blijdorp</string>
+    <string name="locatie">Wat is uw locatie?</string>
+    <string name="oceanium">Oceanium</string>
+    <string name="rivierahal">Rivierahal</string>
+    <string name="title_activity_oceanium_time">OceaniumTimeActivity</string>
+    <string name="title_activity_rivierahal_time">RivierahalTimeActivity</string>
 </resources>
