@@ -32,7 +32,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="288dp"
         android:text="@string/locatie"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
