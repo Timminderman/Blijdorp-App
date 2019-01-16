@@ -54,8 +54,11 @@
             android:name=".OceaniumAcitivity2"
             android:label="@string/title_activity_oceanium_acitivity2" />
         <activity
-            android:name=".RivierahalAcitivity2"
-            android:label="@string/title_activity_rivierahal_acitivity2"></activity>
+            android:name=".OceaniumActivity2"
+            android:label="@string/title_activity_oceanium2" />
+        <activity
+            android:name=".RivierahalActivity2"
+            android:label="@string/title_activity_rivierahal2"></activity>
     </application>
 
 </manifest>

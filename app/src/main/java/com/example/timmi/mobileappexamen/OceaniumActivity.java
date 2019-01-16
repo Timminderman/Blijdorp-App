@@ -44,26 +44,26 @@ public class OceaniumActivity extends FragmentActivity implements OnMapReadyCall
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // MArker voor ingang Oceanium
+        // Marker voor ingang Oceanium
         oceanium = new LatLng(51.928142, 4.443886);
         mMap.addMarker(new MarkerOptions().position(oceanium).title("Ingang Oceanium"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(oceanium, 15f));
 
         // Marker voor ijsberen
         ijsberen = new LatLng(51.927408, 4.445015);
-        mMap.addMarker(new MarkerOptions().position(ijsberen).title("Ijsberen"));
+        mMap.addMarker(new MarkerOptions().position(ijsberen).title("Ijsberen").snippet("Voertijd: 12:00 - 12:20"));
 
         // Marker voor vogels
         vogels = new LatLng(51.927224, 4.446883);
-        mMap.addMarker(new MarkerOptions().position(vogels).title("Vogels"));
+        mMap.addMarker(new MarkerOptions().position(vogels).title("Vogels").snippet("Voertijd: 10:30 - 10:45"));
 
         // Marker voor leeuwen
         leeuwen = new LatLng(51.928381,  4.449852);
-        mMap.addMarker(new MarkerOptions().position(leeuwen).title("Leeuwen"));
+        mMap.addMarker(new MarkerOptions().position(leeuwen).title("Leeuwen").snippet("Voertijd: 11:10 - 11:30"));
 
         // Marker voor Giraffen
         giraffen = new LatLng(51.926262,  4.449822);
-        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen"));
+        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen").snippet("Voertijd: 12:35 - 12:55"));
 
         // Marker voor ingang Rivierahal
         rivierahal = new LatLng(51.925595,  4.454028);

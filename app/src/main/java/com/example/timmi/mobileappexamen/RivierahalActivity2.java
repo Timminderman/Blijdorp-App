@@ -10,7 +10,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class RivierahalActivity extends FragmentActivity implements OnMapReadyCallback {
+public class RivierahalActivity2 extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private LatLng oceanium;
@@ -50,19 +50,19 @@ public class RivierahalActivity extends FragmentActivity implements OnMapReadyCa
 
         // Marker voor ijsberen
         ijsberen = new LatLng(51.927408, 4.445015);
-        mMap.addMarker(new MarkerOptions().position(ijsberen).title("Ijsberen").snippet("Voertijd: 12:00 - 12:20"));
+        mMap.addMarker(new MarkerOptions().position(ijsberen).title("Ijsberen").snippet("Voertijd: 16:00 - 16:20"));
 
         // Marker voor vogels
         vogels = new LatLng(51.927224, 4.446883);
-        mMap.addMarker(new MarkerOptions().position(vogels).title("Vogels").snippet("Voertijd: 10:30 - 10:45"));
+        mMap.addMarker(new MarkerOptions().position(vogels).title("Vogels").snippet("Voertijd: 14:30 - 14:45"));
 
         // Marker voor leeuwen
         leeuwen = new LatLng(51.928381,  4.449852);
-        mMap.addMarker(new MarkerOptions().position(leeuwen).title("Leeuwen").snippet("Voertijd: 11:10 - 11:30"));
+        mMap.addMarker(new MarkerOptions().position(leeuwen).title("Leeuwen").snippet("Voertijd: 15:10 - 15:30"));
 
         // Marker voor Giraffen
         giraffen = new LatLng(51.926262,  4.449822);
-        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen").snippet("Voertijd: 12:35 - 12:55"));
+        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen").snippet("Voertijd: 16:35 - 16:55"));
 
         // Marker voor ingang Rivierahal
         rivierahal = new LatLng(51.925595,  4.454028);

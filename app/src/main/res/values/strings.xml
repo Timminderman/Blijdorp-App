@@ -17,6 +17,9 @@
     <string name="time_one">10:00 - 13:00</string>
     <string name="time_two">14:00 - 17:00</string>
     <string name="route">Route</string>
+    <string name="terug">Terug</string>
     <string name="title_activity_oceanium_acitivity2">OceaniumAcitivity2</string>
     <string name="title_activity_rivierahal_acitivity2">RivierahalAcitivity2</string>
+    <string name="title_activity_oceanium2">OceaniumActivity2</string>
+    <string name="title_activity_rivierahal2">RivierahalActivity2</string>
 </resources>

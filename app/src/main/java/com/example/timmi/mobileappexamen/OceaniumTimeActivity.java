@@ -16,6 +16,7 @@ public class OceaniumTimeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Button buttonOceaniumTime1 = findViewById(R.id.buttonOceaniumTime1);
         Button buttonOceaniumTime2 = findViewById(R.id.buttonOceaniumTime2);
+        Button buttonBackMainActivity = findViewById(R.id.buttonBackMainActivity);
         setContentView(R.layout.activity_oceanium_time);
     }
 
@@ -27,7 +28,14 @@ public class OceaniumTimeActivity extends AppCompatActivity {
     }
     //    Start de activity die bij 14:00 - 17:00 past
     public void startOceaniumActivity2(View view) {
-        Intent intent = new Intent(this, OceaniumActivity.class);
+        Intent intent = new Intent(this, OceaniumActivity2.class);
+        intent.putExtra(EXTRA_INFO, "dit bericht komt uit MainActivity.");
+        startActivity(intent);
+    }
+
+    //    Terug knop naar Main Activity
+    public void startMainActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra(EXTRA_INFO, "dit bericht komt uit MainActivity.");
         startActivity(intent);
     }
