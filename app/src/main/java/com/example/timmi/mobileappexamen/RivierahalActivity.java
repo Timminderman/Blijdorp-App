@@ -26,13 +26,18 @@ public class RivierahalActivity extends FragmentActivity implements OnMapReadyCa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Terug knop naar tijd overzicht
-//        Button buttonBackRivierahal = findViewById(R.id.buttonBackRivierahal);
-        setContentView(R.layout.activity_oceanium);
+        Button buttonBackRivierahalTimes = findViewById(R.id.buttonBackRivierahalTimes);
+        setContentView(R.layout.activity_rivierahal);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    // Terug Knop Rivierahal
+    public void startRivierahalTimeActivity(View view) {
+        Intent intent = new Intent(this, RivierahalTimeActivity.class);
+        startActivity(intent);
     }
 
     /**
@@ -66,7 +71,7 @@ public class RivierahalActivity extends FragmentActivity implements OnMapReadyCa
 
         // Marker voor Giraffen
         giraffen = new LatLng(51.926262,  4.449822);
-        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen").snippet("Voertijd: 12:35 - 12:55"));
+        mMap.addMarker(new MarkerOptions().position(giraffen).title("Giraffen").snippet("Voertijd: 12:35 - 12:55"));
 
         // Marker voor ingang Rivierahal
         rivierahal = new LatLng(51.925595,  4.454028);

@@ -26,7 +26,7 @@ public class OceaniumActivity extends FragmentActivity implements OnMapReadyCall
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Button buttonBackOceaniumTimes = findViewById(R.id.buttonBackOceaniumTimes);
+        Button buttonBackOceaniumTimes = findViewById(R.id.buttonBackOceaniumTimes);
         setContentView(R.layout.activity_oceanium);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -34,11 +34,11 @@ public class OceaniumActivity extends FragmentActivity implements OnMapReadyCall
         mapFragment.getMapAsync(this);
     }
 
-//    // Terug Knop Oceanium
-//    public void startOceaniumTimeActivity(View view) {
-//        Intent intent = new Intent(this, OceaniumTimeActivity.class);
-//        startActivity(intent);
-//    }
+    // Terug Knop Oceanium
+    public void startOceaniumTimeActivity(View view) {
+        Intent intent = new Intent(this, OceaniumTimeActivity.class);
+        startActivity(intent);
+    }
 
 
     /**
@@ -73,7 +73,7 @@ public class OceaniumActivity extends FragmentActivity implements OnMapReadyCall
 
         // Marker voor Giraffen
         giraffen = new LatLng(51.926262,  4.449822);
-        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen").snippet("Voertijd: 12:35 - 12:55"));
+        mMap.addMarker(new MarkerOptions().position(giraffen).title("Giraffen").snippet("Voertijd: 12:35 - 12:55"));
 
         // Marker voor ingang Rivierahal
         rivierahal = new LatLng(51.925595,  4.454028);

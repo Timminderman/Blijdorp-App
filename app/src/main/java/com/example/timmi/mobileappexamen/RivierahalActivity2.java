@@ -1,7 +1,10 @@
 package com.example.timmi.mobileappexamen;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,11 +26,18 @@ public class RivierahalActivity2 extends FragmentActivity implements OnMapReadyC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oceanium);
+        Button buttonBackRivierahalTimes = findViewById(R.id.buttonBackRivierahalTimes);
+        setContentView(R.layout.activity_rivierahal);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    // Terug Knop Rivierahal
+    public void startRivierahalTimeActivity(View view) {
+        Intent intent = new Intent(this, RivierahalTimeActivity.class);
+        startActivity(intent);
     }
 
 
@@ -62,7 +72,7 @@ public class RivierahalActivity2 extends FragmentActivity implements OnMapReadyC
 
         // Marker voor Giraffen
         giraffen = new LatLng(51.926262,  4.449822);
-        mMap.addMarker(new MarkerOptions().position(giraffen).title("Leeuwen").snippet("Voertijd: 16:35 - 16:55"));
+        mMap.addMarker(new MarkerOptions().position(giraffen).title("Giraffen").snippet("Voertijd: 16:35 - 16:55"));
 
         // Marker voor ingang Rivierahal
         rivierahal = new LatLng(51.925595,  4.454028);
