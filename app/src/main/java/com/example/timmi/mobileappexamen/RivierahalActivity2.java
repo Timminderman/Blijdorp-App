@@ -17,10 +17,10 @@ public class RivierahalActivity2 extends FragmentActivity implements OnMapReadyC
 
     private GoogleMap mMap;
     private LatLng oceanium;
-    private LatLng ijsberen;
-    private LatLng vogels;
-    private LatLng leeuwen;
-    private LatLng giraffen;
+    private LatLng apen;
+    private LatLng gorilas;
+    private LatLng pinguins;
+    private LatLng flamingos;
     private LatLng rivierahal;
 
     @Override
@@ -58,21 +58,21 @@ public class RivierahalActivity2 extends FragmentActivity implements OnMapReadyC
         oceanium = new LatLng(51.928142, 4.443886);
         mMap.addMarker(new MarkerOptions().position(oceanium).title("Ingang Oceanium"));
 
-        // Marker voor ijsberen
-        ijsberen = new LatLng(51.927408, 4.445015);
-        mMap.addMarker(new MarkerOptions().position(ijsberen).title("Ijsberen").snippet("Voertijd: 16:00 - 16:20"));
+        // Marker voor Apen
+        apen = new LatLng(51.927320, 4.452312);
+        mMap.addMarker(new MarkerOptions().position(apen).title("Apen").snippet("Voertijd: 16:00 - 16:20"));
 
-        // Marker voor vogels
-        vogels = new LatLng(51.927224, 4.446883);
-        mMap.addMarker(new MarkerOptions().position(vogels).title("Vogels").snippet("Voertijd: 14:30 - 14:45"));
+        // Marker voor Gorilas
+        gorilas = new LatLng(51.925163, 4.451635);
+        mMap.addMarker(new MarkerOptions().position(gorilas).title("Gorilas").snippet("Voertijd: 14:30 - 14:45"));
 
-        // Marker voor leeuwen
-        leeuwen = new LatLng(51.928381,  4.449852);
-        mMap.addMarker(new MarkerOptions().position(leeuwen).title("Leeuwen").snippet("Voertijd: 15:10 - 15:30"));
+        // Marker voor pinguins
+        pinguins = new LatLng(51.928331,  4.446031);
+        mMap.addMarker(new MarkerOptions().position(pinguins).title("Pinguins").snippet("Voertijd: 15:10 - 15:30"));
 
-        // Marker voor Giraffen
-        giraffen = new LatLng(51.926262,  4.449822);
-        mMap.addMarker(new MarkerOptions().position(giraffen).title("Giraffen").snippet("Voertijd: 16:35 - 16:55"));
+        // Marker voor Flamingos
+        flamingos = new LatLng(51.928602,  4.447262);
+        mMap.addMarker(new MarkerOptions().position(flamingos).title("Flamingos").snippet("Voertijd: 16:35 - 16:55"));
 
         // Marker voor ingang Rivierahal
         rivierahal = new LatLng(51.925595,  4.454028);

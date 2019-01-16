@@ -7,43 +7,48 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:orientation="vertical"
-    tools:context=".OceaniumTimeActivity">
+    tools:context=".RivierahalTimeActivity">
 
     <Button
-        android:id="@+id/buttonOceaniumTime1"
+        android:id="@+id/buttonRivierahalTime1"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="36dp"
         android:background="@color/colorOrange"
-        android:onClick="startOceaniumActivity2"
+        android:onClick="startRivierahalActivity2"
         android:text="@string/route"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonOceaniumTime2"
+        android:id="@+id/buttonRivierahalTime2"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="180dp"
         android:background="@color/colorOrange"
-        android:onClick="startOceaniumActivity"
+        android:onClick="startRivierahalActivity"
         android:text="@string/route"
         android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackMainActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/description_times"
         android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,32 +58,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:text="@string/time_one"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOceaniumTime2"
-        app:layout_constraintStart_toStartOf="@+id/buttonOceaniumTime2" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonRivierahalTime2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:text="@string/time_two"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOceaniumTime1"
-        app:layout_constraintStart_toStartOf="@+id/buttonOceaniumTime1" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonRivierahalTime1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonBackMainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:onClick="startMainActivity"
         android:background="@color/colorWhite"
+        android:onClick="startMainActivity"
         android:text="@string/terug"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
